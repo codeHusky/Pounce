@@ -351,8 +351,8 @@ html {
 	--color-blue-bg: rgba(79, 156, 255, 0.2);
 	--color-purple-bg: rgba(199, 138, 255, 0.2);
 
-	--color-brand: var(--color-orange);
-	--color-brand-highlight: #924527;
+	--color-brand: var(--color-orange-500);
+	--color-brand-highlight: #d36217;
 	--color-brand-shadow: rgba(217, 103, 27, 0.7);
 
 	--shadow-inset-lg: inset 0px -2px 2px hsla(221, 39%, 11%, 0.1);
@@ -374,7 +374,7 @@ html {
 	--brand-gradient-fade-out-color: linear-gradient(to bottom, rgba(31, 30, 24, 0), #1e1c17 80%);
 
 	--color-button-bg-selected: var(--color-brand-highlight);
-	--color-button-text-selected: var(--color-brand);
+	--color-button-text-selected: var(--color-orange-100);
 
 	--color-gradient-button-bg: linear-gradient(180deg, #3a3d47 0%, #33363d 100%);
 
