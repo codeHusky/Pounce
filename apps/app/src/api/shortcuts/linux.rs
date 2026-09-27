@@ -17,7 +17,7 @@ pub(super) async fn create_shortcut(
 			Type=Application\n\
 			Name={}\n\
 			Exec={} {}\n\
-			Icon=ModrinthApp\n\
+			Icon=Pounce\n\
 			Terminal=false\n\
 			Categories=Game;\n",
             escape_desktop_entry_value(&format!("Launch {profile_name}")),
