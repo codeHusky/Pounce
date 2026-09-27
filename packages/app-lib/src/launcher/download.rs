@@ -928,7 +928,7 @@ pub async fn download_libraries(
                 } else {
                     // We lack an artifact URL, so fall back to constructing one ourselves.
                     // PrismLauncher just ignores the library if this is the case, so it's
-                    // probably not needed, but previous code revisions of the Modrinth App
+                    // probably not needed, but previous code revisions of the Pounce
                     // intended to do this, so we keep that behavior for compatibility.
 
                     let url = format!(

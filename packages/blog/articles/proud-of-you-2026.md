@@ -31,7 +31,7 @@ Modrinth’s total made up nearly half of Rainbow Railroad’s entire total for 
 
 Historically, Modrinth has had a Frog mascot for many years. It has appeared across our branding, social posts, Discord emotes, seasonal artwork, and community memes, but it never really had a proper name or identity.
 
-Mr. Pack was created as a small thank-you to everyone who supported the fundraiser: a new mascot skin for the Modrinth App, with several Pride variants available to donors who donated more than $5. Mr. Pack is the 5th most popular skin on NameMC for June 2026 - over 4,000 players are using him and his variants!
+Mr. Pack was created as a small thank-you to everyone who supported the fundraiser: a new mascot skin for the Pounce, with several Pride variants available to donors who donated more than $5. Mr. Pack is the 5th most popular skin on NameMC for June 2026 - over 4,000 players are using him and his variants!
 
 ![All of Mr. Pack’s variants (MLM, Genderfluid, Lesbian, Transgender, Asexual, Intersex, Pride, Bisexual, and Nonbinary) posed and lined up in a row.](./pride-skins.webp)
 

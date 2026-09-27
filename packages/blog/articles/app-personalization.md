@@ -7,7 +7,7 @@ authors: ['AJfd8YH6', '6EjnV9Uf']
 
 Hey everyone,
 
-Creating, organizing, and finding instances has always been one of the most important parts of the Modrinth App, but we weren’t happy with how this worked.
+Creating, organizing, and finding instances has always been one of the most important parts of the Pounce, but we weren’t happy with how this worked.
 
 With this update, we’ve brought the Home and Library together into a new Play page, rebuilt instance organization, added an icon editor, and improved onboarding across the whole app.
 

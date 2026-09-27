@@ -63,7 +63,7 @@ Lastly, the meat and potatoes: breakdowns and filters. Breakdowns split your dat
 
 ## Metrics overview
 
-After selecting your query parameters, all of the data below updates automatically. At the top is an overview with four metric cards showing total views, downloads, revenue, and playtime. Playtime is a new metric that tracks hours played by users in Modrinth App.
+After selecting your query parameters, all of the data below updates automatically. At the top is an overview with four metric cards showing total views, downloads, revenue, and playtime. Playtime is a new metric that tracks hours played by users in Pounce.
 
 You can select any metric card to explore that data further on the graph below.
 

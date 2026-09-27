@@ -23,7 +23,7 @@
 						:disabled="!recommendedOptions.length"
 					/>
 					<div class="mt-2 text-secondary">
-						Players joining the server from the Modrinth App will connect using this version.
+						Players joining the server from the Pounce will connect using this version.
 					</div>
 				</label>
 			</div>

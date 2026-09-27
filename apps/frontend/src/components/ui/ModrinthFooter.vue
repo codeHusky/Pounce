@@ -150,7 +150,7 @@ const footerLinks: {
 			},
 			{
 				href: '/app',
-				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'Modrinth App' }),
+				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'Pounce' }),
 			},
 			{
 				href: '/hosting',

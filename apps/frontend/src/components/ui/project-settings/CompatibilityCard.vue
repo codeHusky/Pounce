@@ -6,7 +6,7 @@
 					<div class="text-xl font-semibold text-contrast">Server compatibility</div>
 					<div v-if="!content" class="text-sm text-secondary">
 						Select whether your server is vanilla or modded and which versions it supports. The
-						Modrinth App uses this when a player joins.
+						Pounce uses this when a player joins.
 					</div>
 					<div v-else>
 						<div v-if="content.kind === 'vanilla'" class="flex items-center gap-1.5">

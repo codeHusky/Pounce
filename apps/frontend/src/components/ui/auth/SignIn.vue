@@ -335,11 +335,11 @@ const messages = defineMessages({
 	},
 	launcherCallbackTitle: {
 		id: 'auth.sign-in.launcher.callback.title',
-		defaultMessage: 'Modrinth App sign-in callback',
+		defaultMessage: 'Pounce sign-in callback',
 	},
 	openingLauncherTitle: {
 		id: 'auth.sign-in.launcher.opening.title',
-		defaultMessage: 'Opening Modrinth App...',
+		defaultMessage: 'Opening Pounce...',
 	},
 	openingLauncherDescription: {
 		id: 'auth.sign-in.launcher.opening.description',
@@ -363,7 +363,7 @@ const messages = defineMessages({
 	},
 	chooseAccountLabel: {
 		id: 'auth.sign-in.choose-account',
-		defaultMessage: 'Choose an account to use in Modrinth App',
+		defaultMessage: 'Choose an account to use in Pounce',
 	},
 	addAccountLabel: {
 		id: 'auth.sign-in.add-account',
@@ -400,12 +400,11 @@ const messages = defineMessages({
 	},
 	launcherSignInCompleteDescription: {
 		id: 'auth.sign-in.launcher.complete.description',
-		defaultMessage:
-			'We’re returning you to the Modrinth App. If nothing happens, use the button below.',
+		defaultMessage: 'We’re returning you to the Pounce. If nothing happens, use the button below.',
 	},
 	returnToLauncherButton: {
 		id: 'auth.sign-in.launcher.complete.return-button',
-		defaultMessage: 'Open Modrinth App',
+		defaultMessage: 'Open Pounce',
 	},
 	goToWebsiteButton: {
 		id: 'auth.sign-in.launcher.complete.go-to-website',

@@ -1,17 +1,17 @@
 ---
-title: Introducing Modrinth App Beta
-short_title: Modrinth App Beta and Upgraded Authentication
-summary: Changing the modded Minecraft landscape with the new Modrinth App, alongside several other major features.
-short_summary: Launching Modrinth App Beta and upgrading authentication.
+title: Introducing Pounce Beta
+short_title: Pounce Beta and Upgraded Authentication
+summary: Changing the modded Minecraft landscape with the new Pounce, alongside several other major features.
+short_summary: Launching Pounce Beta and upgrading authentication.
 date: 2023-08-05T12:00:00-08:00
 authors: ['6plzAzU4']
 ---
 
-The past few months have been a bit quiet on our part, but that doesn’t mean we haven’t been working on anything. In fact, this is quite possibly our biggest update yet, bringing the much-anticipated Modrinth App to general availability, alongside several other major features. Let’s get right into it!
+The past few months have been a bit quiet on our part, but that doesn’t mean we haven’t been working on anything. In fact, this is quite possibly our biggest update yet, bringing the much-anticipated Pounce to general availability, alongside several other major features. Let’s get right into it!
 
-## Modrinth App Beta
+## Pounce Beta
 
-Most of our time has been spent working on [Modrinth App](/app). This launcher integrates tightly with the website, bringing you the same bank of mods, modpacks, data packs, shaders, and resource packs already available for download on Modrinth.
+Most of our time has been spent working on [Pounce](/app). This launcher integrates tightly with the website, bringing you the same bank of mods, modpacks, data packs, shaders, and resource packs already available for download on Modrinth.
 
 Alongside that, there are a wealth of other features for you to find, including:
 

@@ -5,7 +5,7 @@
 
 Platform-agnostic TypeScript client for Modrinth's API across Node.js, browsers, Nuxt, and Tauri.
 
-**⚠️ We use this internally to power modrinth.com, Modrinth App, and Modrinth Hosting frontends. It may break without any notice, but you are welcome to use it.**
+**⚠️ We use this internally to power modrinth.com, Pounce, and Modrinth Hosting frontends. It may break without any notice, but you are welcome to use it.**
 
 ## Installation
 
@@ -101,7 +101,7 @@ const project: Labrinth.Projects.v3.Project = await client.labrinth.projects_v3.
 
 ## Modrinth Hosting API Modules
 
-- These modules are internal to Modrinth and are only supported inside the Modrinth Hosting panel in Modrinth App and on modrinth.com. They should not be expected to work in third-party clients today. We are discussing how to safely expose access to your own server through these APIs in the future.
+- These modules are internal to Modrinth and are only supported inside the Modrinth Hosting panel in Pounce and on modrinth.com. They should not be expected to work in third-party clients today. We are discussing how to safely expose access to your own server through these APIs in the future.
 
 ## Base URLs
 

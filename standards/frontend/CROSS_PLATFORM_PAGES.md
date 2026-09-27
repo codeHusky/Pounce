@@ -1,6 +1,6 @@
 # Cross-Platform Pages
 
-Put pages for both Modrinth Website and Modrinth App in `packages/ui/src/layouts/`.
+Put pages for both Modrinth Website and Pounce in `packages/ui/src/layouts/`.
 
 Use one of two layout types. Select the type from the differences between the platform logic.
 
@@ -50,8 +50,7 @@ export interface ContentManagerContext {
 	mapToTableItem: (item: ContentItem) => ContentCardTableItem
 }
 
-export const [injectContentManager, provideContentManager] =
-	createContext<ContentManagerContext>('ContentPageLayout', 'contentManagerContext')
+export const [injectContentManager, provideContentManager] = createContext<ContentManagerContext>('ContentPageLayout', 'contentManagerContext')
 ```
 
 ### Platform Implementations
@@ -124,10 +123,10 @@ v-if="ctx.bulkUpdateItems && hasOutdatedProjects"
 
 ### Props and DI
 
-| Use   | Condition                                                                  |
-| ----- | -------------------------------------------------------------------------- |
-| DI    | Use when API calls, file operations, or navigation differ by platform.     |
-| Props | Use when configuration and display data are the same on all platforms.      |
+| Use   | Condition                                                              |
+| ----- | ---------------------------------------------------------------------- |
+| DI    | Use when API calls, file operations, or navigation differ by platform. |
+| Props | Use when configuration and display data are the same on all platforms. |
 
 ## Wrapped Pages (`layouts/wrapped/`)
 
@@ -179,7 +178,9 @@ This behavior prevents empty content from appearing before the data exists.
 ```
 
 ```ts
-const primaryQuery = useQuery({ /* Query options. */ })
+const primaryQuery = useQuery({
+	/* Query options. */
+})
 const readyPending = useReadyState(primaryQuery)
 
 // Use this form when the complete query object is not available.

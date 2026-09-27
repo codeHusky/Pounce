@@ -21,7 +21,7 @@ In 2020, COVID hit and I found myself with a lot of time on my hands. The platfo
 
 I open-sourced it, and people actually showed up to help build it with me. That's how Modrinth really started, as a thing I was building that other people wanted to exist too.
 
-Over the next year and a half, I kept working on it, mostly during school, sometimes instead of school. Listening to creators, shipping features, fixing things that broke. By 2022 we had a million monthly visitors and my hobby project was taking over my life. I dropped out of high school to work on Modrinth full time. I raised money, hired a team, and moved to New York. We launched creator monetization, the Modrinth App, analytics, and more.
+Over the next year and a half, I kept working on it, mostly during school, sometimes instead of school. Listening to creators, shipping features, fixing things that broke. By 2022 we had a million monthly visitors and my hobby project was taking over my life. I dropped out of high school to work on Modrinth full time. I raised money, hired a team, and moved to New York. We launched creator monetization, the Pounce, analytics, and more.
 
 The site was growing like crazy, but we also accumulated a lot of technical debt and made a lot of mistakes along the way. In early 2024, I [returned $800k to our investors](/news/article/capital-return/) because the venture path wasn't right for us. That was painful, but the right thing to do.
 

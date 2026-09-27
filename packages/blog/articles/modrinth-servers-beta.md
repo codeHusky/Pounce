@@ -46,7 +46,7 @@ As this is a beta release, there's much more to come for Modrinth Servers:
 - **Global availability:** We plan to expand to more worldwide regions and offer the ability to select a region for your server, ensuring optimal performance no matter where you are.
 - **Support more types of content:** We'll be adding support for plugin loaders and improving support for data packs, giving you more flexibility and functionality
 - **Social features:** A friends system to make sharing invites to servers easier, streamlining sharing custom-built modpacks and servers with your community.
-- **App integration:** Full integration with Modrinth App, including the ability to sync an instance with a server or friends, making collaboration seamless.
+- **App integration:** Full integration with Pounce, including the ability to sync an instance with a server or friends, making collaboration seamless.
 - **Collaborative management:** Give other Modrinth users access to your server panel so you can manage your server with your team.
 - **Automatic creator commissions:** Creators will automatically earn a portion of server proceeds when content is installed on a Modrinth Server.
 

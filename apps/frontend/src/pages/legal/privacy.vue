@@ -11,9 +11,8 @@
 		</p>
 		<p>
 			This policy describes the types of information we may collect from you or that you may provide
-			when you use www.modrinth.com, api.modrinth.com, or the Modrinth App ("Service" or "Website"),
-			and our practices for collecting, using, maintaining, protecting, and disclosing that
-			information.
+			when you use www.modrinth.com, api.modrinth.com, or the Pounce ("Service" or "Website"), and
+			our practices for collecting, using, maintaining, protecting, and disclosing that information.
 		</p>
 		<p>This policy applies to information we collect:</p>
 		<ul>
@@ -96,7 +95,7 @@
 		<p>This data is used to monitor automated access to our service and deliver statistics.</p>
 
 		<h3>Playtime data</h3>
-		<p>When you use the Modrinth App to play Modrinth projects, we collect:</p>
+		<p>When you use the Pounce to play Modrinth projects, we collect:</p>
 		<ul>
 			<li>Your IP address</li>
 			<li>Your user ID</li>
@@ -109,7 +108,7 @@
 		<p>This data is used to deliver statistics.</p>
 
 		<h3>Usage data</h3>
-		<p>When you interact with the Modrinth App or the Website, we collect through PostHog:</p>
+		<p>When you interact with the Pounce or the Website, we collect through PostHog:</p>
 		<ul>
 			<li>Your IP address</li>
 			<li>Your anonymized user ID</li>

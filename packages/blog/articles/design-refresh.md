@@ -15,7 +15,7 @@ First off, we’re launching [Modrinth+](/plus), a monthly subscription to help 
 
 As a Modrinth+ subscriber, you will get:
 
-- Ad-free browsing on the Modrinth App and website
+- Ad-free browsing on the Pounce and website
 - An exclusive badge on your profile
 - Half of your subscription will go to creators on the site!
 - …and more coming soon!
@@ -56,9 +56,9 @@ These changes bring Modrinth back to sustainability as well as conservatively in
 
 We also want to thank our friends over at [BisectHosting](https://www.bisecthosting.com/) for supporting us with our ad deal for the past year.
 
-## Modrinth App 0.8.1
+## Pounce 0.8.1
 
-Over the last few months, we’ve been overhauling the internals of the Modrinth App to drastically improve performance and stability. Over one hundred issues have been closed with this update alone! Here’s a short list of the major changes:
+Over the last few months, we’ve been overhauling the internals of the Pounce to drastically improve performance and stability. Over one hundred issues have been closed with this update alone! Here’s a short list of the major changes:
 
 - Newer versions of Forge and NeoForge now work!
 - Migrated internal launcher data to use SQLite. The app now loads in <40ms on average (compared to ~2.5s before)!
@@ -69,7 +69,7 @@ Over the last few months, we’ve been overhauling the internals of the Modrinth
 - Fix freezing and include crash reports logs tab
 - And over one hundred more fixes!
 
-Don’t have the Modrinth App? Check it out [here](/app)!
+Don’t have the Pounce? Check it out [here](/app)!
 
 ## Conclusion
 

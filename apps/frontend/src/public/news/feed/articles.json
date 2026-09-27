@@ -72,14 +72,14 @@
 		},
 		{
 			"title": "Modrinth Hosting in the App",
-			"summary": "Buy, setup, and manage your server all in the Modrinth App.",
+			"summary": "Buy, setup, and manage your server all in the Pounce.",
 			"thumbnail": "https://modrinth.com/news/article/modrinth-hosting-in-app/thumbnail.webp",
 			"date": "2026-04-12T21:30:00.000Z",
 			"link": "https://modrinth.com/news/article/modrinth-hosting-in-app"
 		},
 		{
 			"title": "Content Management Overhaul",
-			"summary": "Overhauled content management for both Modrinth Hosting servers and Modrinth App instances.",
+			"summary": "Overhauled content management for both Modrinth Hosting servers and Pounce instances.",
 			"thumbnail": "https://modrinth.com/news/article/content-management-overhaul/thumbnail.webp",
 			"date": "2026-03-17T20:15:00.000Z",
 			"link": "https://modrinth.com/news/article/content-management-overhaul"
@@ -134,8 +134,8 @@
 			"link": "https://modrinth.com/news/article/free-server-medal"
 		},
 		{
-			"title": "Skins — Now in Modrinth App!",
-			"summary": "Customize your look, save your favorite skins, and swap them out in a flash, all within Modrinth App.",
+			"title": "Skins — Now in Pounce!",
+			"summary": "Customize your look, save your favorite skins, and swap them out in a flash, all within Pounce.",
 			"thumbnail": "https://modrinth.com/news/article/skins-now-in-modrinth-app/thumbnail.webp",
 			"date": "2025-07-06T23:45:00.000Z",
 			"link": "https://modrinth.com/news/article/skins-now-in-modrinth-app"
@@ -211,8 +211,8 @@
 			"link": "https://modrinth.com/news/article/download-adjustment"
 		},
 		{
-			"title": "Introducing Modrinth App Beta",
-			"summary": "Changing the modded Minecraft landscape with the new Modrinth App, alongside several other major features.",
+			"title": "Introducing Pounce Beta",
+			"summary": "Changing the modded Minecraft landscape with the new Pounce, alongside several other major features.",
 			"thumbnail": "https://modrinth.com/news/default.webp",
 			"date": "2023-08-05T20:00:00.000Z",
 			"link": "https://modrinth.com/news/article/modrinth-app-beta"

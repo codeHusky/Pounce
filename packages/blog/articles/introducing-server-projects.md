@@ -73,7 +73,7 @@ Additionally, Server Projects are the only project type **not eligible for payou
 Server Projects use two new discovery metrics instead of downloads to help surface new servers over time. These are:
 
 - **Players online:** The live player count reported by the server.
-- **Verified plays:** Joins from the Modrinth App in the last two weeks.
+- **Verified plays:** Joins from the Pounce in the last two weeks.
 
 ![Server discovery](./project-discovery.webp)
 

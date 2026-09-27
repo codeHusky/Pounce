@@ -886,7 +886,7 @@ const messages = defineMessages({
 	},
 	midasBenefitAdFree: {
 		id: 'settings.billing.midas.benefits.ad-free',
-		defaultMessage: 'Ad-free browsing on modrinth.com and Modrinth App',
+		defaultMessage: 'Ad-free browsing on modrinth.com and Pounce',
 	},
 	midasBenefitBadge: {
 		id: 'settings.billing.midas.benefits.badge',

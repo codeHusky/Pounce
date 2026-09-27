@@ -138,7 +138,7 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	openingApp: {
 		id: 'modal.shared-instance.open-in-app.title',
-		defaultMessage: 'Opening Modrinth App',
+		defaultMessage: 'Opening Pounce',
 	},
 	managedBy: {
 		id: 'modal.shared-instance.open-in-app.managed-by',
@@ -146,7 +146,7 @@ const messages = defineMessages({
 	},
 	whyUseApp: {
 		id: 'modal.shared-instance.open-in-app.why-use',
-		defaultMessage: 'Why use the Modrinth App',
+		defaultMessage: 'Why use the Pounce',
 	},
 	benefitJoin: {
 		id: 'modal.shared-instance.open-in-app.benefit.join',
@@ -162,11 +162,11 @@ const messages = defineMessages({
 	},
 	openingAutomatically: {
 		id: 'modal.shared-instance.open-in-app.opening-automatically',
-		defaultMessage: 'The Modrinth App will open automatically...',
+		defaultMessage: 'The Pounce will open automatically...',
 	},
 	getApp: {
 		id: 'modal.shared-instance.open-in-app.get-app',
-		defaultMessage: 'Get Modrinth App',
+		defaultMessage: 'Get Pounce',
 	},
 })
 

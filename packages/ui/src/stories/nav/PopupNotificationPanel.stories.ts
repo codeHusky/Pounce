@@ -57,7 +57,7 @@ export const Default: StoryObj = {
 				popupManager.addPopupNotification({
 					contentType: 'standard',
 					title: 'Update available',
-					text: "Modrinth App v2.1.0 is available now! Since you're on a metered network, we didn't automatically download it.",
+					text: "Pounce v2.1.0 is available now! Since you're on a metered network, we didn't automatically download it.",
 					type: 'warning',
 					autoCloseMs: null,
 					buttons: [
@@ -78,7 +78,7 @@ export const Default: StoryObj = {
 				popupManager.addPopupNotification({
 					contentType: 'standard',
 					title: 'Download complete',
-					text: 'Modrinth App v2.1.0 has finished downloading. Reload to update now.',
+					text: 'Pounce v2.1.0 has finished downloading. Reload to update now.',
 					type: 'info',
 					buttons: [
 						{

@@ -1,11 +1,11 @@
 ---
 title: Modrinth Hosting in the App
-summary: Buy, setup, and manage your server all in the Modrinth App.
+summary: Buy, setup, and manage your server all in the Pounce.
 date: 2026-04-12T13:30:00-08:00
 authors: ['AJfd8YH6', 'bOHH0P9Z', '6EjnV9Uf', 'LnK8MbX7']
 ---
 
-This update brings [Modrinth Hosting](/hosting) into [Modrinth App](/app) and is a big step towards our vision for both products. You can now purchase a server, set it up, play without bouncing between the website and the app!
+This update brings [Modrinth Hosting](/hosting) into [Pounce](/app) and is a big step towards our vision for both products. You can now purchase a server, set it up, play without bouncing between the website and the app!
 
 This release also includes a redesigned server console which has been brought over to the logs page in instances.
 

@@ -18,7 +18,7 @@ Most of Modrinth's code is in our monorepo, which you can find [here](https://gi
 Follow the project-specific instructions below to get started:
 
 - [Modrinth Website](/contributing/knossos)
-- [Modrinth App](/contributing/theseus)
+- [Pounce](/contributing/theseus)
 - [Minotaur (Gradle plugin)](/contributing/minotaur)
 - [Labrinth (API/backend)](/contributing/labrinth)
 - [Daedalus (Metadata service)](/contributing/daedalus)

@@ -1,6 +1,6 @@
 ---
 title: Content Management Overhaul
-summary: Overhauled content management for both Modrinth Hosting servers and Modrinth App instances.
+summary: Overhauled content management for both Modrinth Hosting servers and Pounce instances.
 date: 2026-03-17T12:15:00-08:00
 authors: ['AJfd8YH6', 'bOHH0P9Z', 'LnK8MbX7']
 ---
@@ -26,7 +26,7 @@ Our goal was to bring those two experiences together.
 
 We took everything we learned from working on instances, looked at what was missing, and rebuilt it from the ground up so the same implementation can power both.
 
-Because of that, many of the features in this post are new to Modrinth Hosting but already familiar to app users. Modrinth App instances also picked up a few upgrades along the way, so you will see some improvements there too.
+Because of that, many of the features in this post are new to Modrinth Hosting but already familiar to app users. Pounce instances also picked up a few upgrades along the way, so you will see some improvements there too.
 
 ## Server Onboarding
 

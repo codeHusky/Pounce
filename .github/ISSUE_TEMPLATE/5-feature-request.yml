@@ -15,7 +15,7 @@ body:
       label: What parts of Modrinth is your feature request related too?
       multiple: true
       options:
-        - Modrinth App
+        - Pounce
         - Modrinth.com website
         - Modrinth Hosting
         - Modrinth API for developers

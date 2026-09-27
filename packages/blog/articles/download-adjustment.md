@@ -38,6 +38,6 @@ In order to fix this, we entirely rewrote Sisyphus. It still uses Cloudflare Wor
 
 Notice the spikes on the left? Compare that to the silky-smooth sinusoidal satisfaction on the right!
 
-To reiterate, the issue is now resolved and **payouts were not affected**. Payouts do not take into account downloads from launchers other than the [Modrinth App](/app); therefore, this adjustment has no bearing on payouts.
+To reiterate, the issue is now resolved and **payouts were not affected**. Payouts do not take into account downloads from launchers other than the [Pounce](/app); therefore, this adjustment has no bearing on payouts.
 
 P.S. Are you curious about why our download counter is called Sisyphus? In Greek mythology, Sisyphus rolls a boulder up a hill for the rest of eternity. Like Sisyphus, our download counter has no point other than to keep increasing for as long as Modrinth exists.

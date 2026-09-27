@@ -265,7 +265,7 @@ export const analyticsStatCardMessages = defineMessages({
 	monetizationBannerBody: {
 		id: 'analytics.stat.monetization-banner.body',
 		defaultMessage:
-			'Only views and downloads made through Modrinth are eligible for monetization and must pass fraud-prevention filtering. Modrinth App downloads also require the user to be logged in. Because all projects have a similar ratio of monetized downloads, your revenue would not meaningfully change if all downloads were counted.',
+			'Only views and downloads made through Modrinth are eligible for monetization and must pass fraud-prevention filtering. Pounce downloads also require the user to be logged in. Because all projects have a similar ratio of monetized downloads, your revenue would not meaningfully change if all downloads were counted.',
 	},
 	monetizationBannerLearnMore: {
 		id: 'analytics.stat.monetization-banner.learn-more',
@@ -448,7 +448,7 @@ export const analyticsDownloadSourceMessages = defineMessages({
 	},
 	app: {
 		id: 'analytics.download-source.app',
-		defaultMessage: 'Modrinth App',
+		defaultMessage: 'Pounce',
 	},
 })
 

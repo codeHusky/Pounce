@@ -7,7 +7,7 @@ authors: [bOHH0P9Z, o2Dd4mrX, AJfd8YH6]
 
 Hey everyone!
 
-Sharing content has been one of the most requested features for the Modrinth App. People have worked around this by creating unlisted projects or sending a new `.mrpack` after every update.
+Sharing content has been one of the most requested features for the Pounce. People have worked around this by creating unlisted projects or sending a new `.mrpack` after every update.
 
 You can finally share an instance directly with friends and push updates as it changes!
 

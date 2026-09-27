@@ -68,7 +68,7 @@ The new options are as follows:
 This is a great first step towards us fixing many common issues that have been affecting Modrinth users, such as:
 
 - Client-side mods being installed to Modrinth Servers, causing crashes
-- Modpack exporting in Modrinth App and other launchers using the Modrinth API such as Prism Launcher, MultiMC, and ATLauncher not having accurate and reliable metadata to pull from in order to build universal client and server Modrinth Pack files.
+- Modpack exporting in Pounce and other launchers using the Modrinth API such as Prism Launcher, MultiMC, and ATLauncher not having accurate and reliable metadata to pull from in order to build universal client and server Modrinth Pack files.
 
 However, this is just the first step. Before we can improve the tooling around creating and using modpacks, we need as many Modrinth projects as possible to have accurate metadata.
 

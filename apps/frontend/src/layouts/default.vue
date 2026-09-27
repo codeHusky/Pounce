@@ -1040,11 +1040,11 @@ const navMenuMessages = defineMessages({
 	},
 	getModrinthApp: {
 		id: 'layout.nav.get-modrinth-app',
-		defaultMessage: 'Get Modrinth App',
+		defaultMessage: 'Get Pounce',
 	},
 	modrinthApp: {
 		id: 'layout.nav.modrinth-app',
-		defaultMessage: 'Modrinth App',
+		defaultMessage: 'Pounce',
 	},
 })
 

@@ -9,9 +9,9 @@ Do not add a change that you can explain only with internal code, component, or 
 ## Voice and Tense
 
 - Use the past tense with an implicit subject. The section heading supplies the context for the bullet.
-	- Correct: `Fixed a missing gap between the project filter tabs and the project list.`
-	- Correct: `Added support for Java 25.`
-	- Incorrect: `We fixed...`, `This fixes...`, `Fixes...`, or `Will fix...`.
+  - Correct: `Fixed a missing gap between the project filter tabs and the project list.`
+  - Correct: `Added support for Java 25.`
+  - Incorrect: `We fixed...`, `This fixes...`, `Fixes...`, or `Will fix...`.
 - Do not use the first person. A featured release that links to a blog post is an exception.
 - Use the second person only for a direct user action.
 
@@ -21,12 +21,12 @@ Example of a direct action: `Joining a server downloads the required content and
 
 Make the first verb agree with its section. Do not put a `Fixed` bullet in `## Added`.
 
-| Section       | Typical first words                                                        |
-| ------------- | -------------------------------------------------------------------------- |
-| `## Added`    | Added, Introduced, New                                                      |
-| `## Changed`  | Refreshed, Redesigned, Moved, Renamed, Updated, Consolidated, Improved     |
-| `## Fixed`    | Fixed                                                                      |
-| `## Security` | Fixed, with a clear security context                                       |
+| Section       | Typical first words                                                    |
+| ------------- | ---------------------------------------------------------------------- |
+| `## Added`    | Added, Introduced, New                                                 |
+| `## Changed`  | Refreshed, Redesigned, Moved, Renamed, Updated, Consolidated, Improved |
+| `## Fixed`    | Fixed                                                                  |
+| `## Security` | Fixed, with a clear security context                                   |
 
 You can omit `Added` in the `## Added` section because the heading supplies it:
 
@@ -81,7 +81,7 @@ Historical entries do not always use periods. Use periods in all new entries.
 
 ## Product and UI Names
 
-- Use the public names `Modrinth App`, `Modrinth Hosting`, and `Modrinth`.
+- Use the public names `Pounce`, `Modrinth Hosting`, and `Modrinth`.
 - Do not use deprecated names, such as `Modrinth Servers`.
 - Use the labels that appear in the UI.
 - Capitalize a tab or page name when you refer to its label.
@@ -107,14 +107,14 @@ Replace `Fixed an issue with misaligned buttons` with `Fixed misaligned buttons.
 
 ## Weak-Bullet Rewrites
 
-| Weak                                                       | Better                                                                                |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `Fixed a bug.`                                             | `Fixed excessive brightness on project icons during hover.`                           |
-| `Various improvements to the server panel.`                | Divide it into specific bullets, or remove it.                                        |
-| `Refactored the logs page to use a new component.`         | `Redesigned the Logs page to match the Modrinth Hosting server panel.`                |
-| `Fixed an issue where the server address was not copyable.` | `The server address in the panel header now copies to the clipboard when selected.`  |
-| `Made some changes to the Content tab.`                    | List each user-visible change, or remove the bullet.                                  |
-| `Fixed UX issues.`                                         | Name the specific user-experience problem.                                            |
+| Weak                                                        | Better                                                                              |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `Fixed a bug.`                                              | `Fixed excessive brightness on project icons during hover.`                         |
+| `Various improvements to the server panel.`                 | Divide it into specific bullets, or remove it.                                      |
+| `Refactored the logs page to use a new component.`          | `Redesigned the Logs page to match the Modrinth Hosting server panel.`              |
+| `Fixed an issue where the server address was not copyable.` | `The server address in the panel header now copies to the clipboard when selected.` |
+| `Made some changes to the Content tab.`                     | List each user-visible change, or remove the bullet.                                |
+| `Fixed UX issues.`                                          | Name the specific user-experience problem.                                          |
 
 ## Featured Release Bullets
 

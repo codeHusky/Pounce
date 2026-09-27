@@ -1,1 +1,1 @@
-Content management logic shared between Modrinth App & Labrinth
+Content management logic shared between Pounce & Labrinth

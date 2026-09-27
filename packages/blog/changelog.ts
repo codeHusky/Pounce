@@ -16,7 +16,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.21.5',
 		body: `## Changed
 - Changed how some app settings are stored.
-- Added a setting to refocus Modrinth App when Minecraft closes - this is disabled by default.
+- Added a setting to refocus Pounce when Minecraft closes - this is disabled by default.
 
 ## Fixed
 - Fixed some issues where "Database is locked" errors would occur.
@@ -110,7 +110,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed issue with resource pack syncing where resource packs with missing \`pack.mcmeta\` files would completely block syncing from happening for all packs.
 - Fixed issue in the content tab for uploaded resource packs having mc color codes in their names. Now they are removed.
 - Fixed "Minimise on launch" setting not working as intended.
-- Fixed Alt + Tab causing Modrinth App to crash on windows for some users.
+- Fixed Alt + Tab causing Pounce to crash on windows for some users.
 - Fixed spacing on language group headers
 - Fixed failed or interrupted modpack updates leaving instance files partially replaced by restoring the previous content.
 - Fixed duplicated instances losing content update locks.
@@ -163,7 +163,7 @@ const VERSIONS: VersionEntry[] = [
 - The random project carousels on the home page and app landing page now pull from the [Featured projects](https://modrinth.com/collection/YV97U1kk) collection.
 - Updated screenshots on the app landing page.
 - Changed some callouts on app landing page to highlight newer features like the skin manager and settings syncing.
-- Removed claims about RAM usage of Modrinth App on app landing page.
+- Removed claims about RAM usage of Pounce on app landing page.
 - Switched some projects out on app landing page to freshen it up.`,
 	},
 	{
@@ -215,7 +215,7 @@ const VERSIONS: VersionEntry[] = [
 - Added searching by source mod name or filename in Game settings.
 
 ## Changed
-- Updated mod keybindings in Game settings to display translated names from mod jars when available, using the Modrinth App's selected language.
+- Updated mod keybindings in Game settings to display translated names from mod jars when available, using the Pounce's selected language.
 - Updated the Language option in Game settings to use a searchable dropdown with language names and regions.
 - Updated sync indicators with blue badges for resource packs in the Content tab and multiplayer servers in the Worlds tab.
 - Updated memory allocation sliders to show the minimum as 0MB and maximum in GB.
@@ -254,12 +254,12 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.20.0',
 		body: `## Added
-- Added \`options.txt\` syncing and editing in the Modrinth App, keeping game settings consistent across Minecraft versions.
+- Added \`options.txt\` syncing and editing in the Pounce, keeping game settings consistent across Minecraft versions.
 - Added optional resource pack syncing, disabled by default, which shares packs, enabled states, and load order across participating instances.
 - Added Sync and Desync actions, status indicators, and cross-instance change warnings for resource packs in the Content tab.
 - Added per-instance sync overrides for game settings and resource packs.
 - Added an update notice explaining the expanded syncing features and letting existing users choose whether to start syncing and select a source instance.
-- Added a Features settings tab for controlling optional parts of the Modrinth App interface.
+- Added a Features settings tab for controlling optional parts of the Pounce interface.
 - Added Features controls for showing the Skin selector in the sidebar, limiting Quick instances, and syncing feature settings across devices.
 
 ## Changed
@@ -383,12 +383,12 @@ const VERSIONS: VersionEntry[] = [
 
 ## Changed
 - Improved the consistency of filter dropdowns on the Versions and Changelog pages.
-- When signing into Modrinth App, you're now given the choice of which account you'd like to sign into.
+- When signing into Pounce, you're now given the choice of which account you'd like to sign into.
 - When you get a "You don't have access to this page" error, you are given the option to switch to another account.
 - Theme changes now happen instantly, disabling any funky transitions while it happens.
 - Renamed "Source jar" to "Sources jar" and "Javadoc jar" to "Javadocs jar"
 - Changed the icons for publish options to include a plus on them.
-- Redesigned the gallery image viewer to match what we have in Modrinth App for screenshots.
+- Redesigned the gallery image viewer to match what we have in Pounce for screenshots.
 - Opening an image in a new tab will now open the raw image.
 - Collections by non-creators are no longer indexed.
 - Changed Settings page favicons to have a Settings cog icon in the corner.
@@ -426,7 +426,7 @@ const VERSIONS: VersionEntry[] = [
 - Enabled friend request controls in Social settings - you can now limit who can send you friend requests on Modrinth.
 - Enabled shared instance invite controls in Social settings, letting you limit who can send you shared instance invites.
 - Enabled Modrinth Hosting access invite controls in Social settings - you can now limit who can invite you to manage a Modrinth Hosting server.
-- Added a new option to sync your behaviour & appearance settings across Modrinth App sessions on multiple devices.
+- Added a new option to sync your behaviour & appearance settings across Pounce sessions on multiple devices.
 - Added language coverage to the Language settings page.
 
 ## Changed
@@ -632,7 +632,7 @@ const VERSIONS: VersionEntry[] = [
 - Common config file formats and RPO files are now hidden from the external modpack file warning modal.
 - Updated text in unknown file warning.
 - When viewing an instance's content in the app, content updates will now be checked immediately, rather than waiting for cache to be invalidated. It may take up to 10 minutes for updates to be shown in the content tab.
-- Updated translations. Want to help translate Modrinth App? [Click here](https://translate.modrinth.com)
+- Updated translations. Want to help translate Pounce? [Click here](https://translate.modrinth.com)
 
 ## Fixed
 - Fixed issue with animated GIFs sometimes not working in project page descriptions.
@@ -766,7 +766,7 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 
 - More than three instances now show up in the left sidebar's quick instance selection area for larger window sizes.
-- Updated Modrinth App logo to just use the standard Modrinth logo to save space.
+- Updated Pounce logo to just use the standard Modrinth logo to save space.
 - Updated the design of the back/forward buttons.
 - Limited shared instances to 50 users.
 - Changed the expiry date picker in the shared instance invite edit modal to be a dropdown of common dates, rather than a complicated date picker. You can still use the fine-grained date picker by choosing "Custom"
@@ -775,7 +775,7 @@ const VERSIONS: VersionEntry[] = [
 - Moved out behavioural settings into it's own subpage, rather than being in Appearance settings.
 - Updated "Advanced" toggle filter design to be the same as the other filters, just with only an exclude button as the primary action.
 - Re-aligned the traffic light buttons on macOS with the top bar.
-- Updated translations. Want to help translate the Modrinth App? [Click here](https://translate.modrinth.com)
+- Updated translations. Want to help translate the Pounce? [Click here](https://translate.modrinth.com)
 - **Modrinth Hosting:** Updated translations. Want to help translate Modrinth Hosting? [Click here](https://translate.modrinth.com)
 
 ## Fixed
@@ -1182,8 +1182,8 @@ const VERSIONS: VersionEntry[] = [
 ## Fixed
 - Fixed an issue where sometimes the app would desynchronise from the file system when disabling, enabling or removing mods from the Content tab.
 - Fixed issue where server pinging in the Worlds tab of the instance page would be stuck in a loading state for too long.
-- Fixed the Logs page in Modrinth App overflowing past the window instead of keeping the console contained.
-- Fixed the Modrinth Hosting server panel in Modrinth App overflowing past the window instead of keeping the console contained.
+- Fixed the Logs page in Pounce overflowing past the window instead of keeping the console contained.
+- Fixed the Modrinth Hosting server panel in Pounce overflowing past the window instead of keeping the console contained.
 - Fixed issue where sometimes disabling linked modpack content would not work. Thanks [@creeperkatze](@creeperkatze)!
 - Fixed issue where unlinking a locally imported mrpack from an instance causes the content to never show up in the content list.`,
 	},
@@ -1214,7 +1214,7 @@ const VERSIONS: VersionEntry[] = [
 - Added the ability to create desktop shortcuts for your instances.
 
 ## Changed
-- Instance installs in the Modrinth App now show detailed progress for preparing Java, downloading modpack files, downloading content, extracting overrides, and downloading Minecraft.
+- Instance installs in the Pounce now show detailed progress for preparing Java, downloading modpack files, downloading content, extracting overrides, and downloading Minecraft.
 - Java, modpack, content, overrides and Minecraft downloads/extracting now show downloaded/extracted and total size.
 - The Content tab’s "Update all" action now shows live progress while resolving versions, downloading projects, and finishing updates.
 - Changed the visual style of the Delete server/Delete world modal on the Worlds tab of instances to match the Content tab's modals.
@@ -1341,7 +1341,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed rate limit issue when adding a skin in the skin selector.
 - Fixed issue with the Skin selector appearing in a broken state when the Minecraft api is unavailable. Now it appears in a read only state, showing the last selected skin or the default skin if it is unable to determine the last selected skin.
 - Fixed issue where skins which had translucency in the outer layer did not correctly render.
-- Fixed issue in Skin selector where the Edit button was not available on skins included within Modrinth App - meaning you could not change the cape of the skin without first applying it.
+- Fixed issue in Skin selector where the Edit button was not available on skins included within Pounce - meaning you could not change the cape of the skin without first applying it.
 - Fixed loading state incorrectly showing briefly in the Skins selector when a saved skin is deleted.`,
 	},
 	{
@@ -1435,7 +1435,7 @@ const VERSIONS: VersionEntry[] = [
 - Updated translations
 
 ## Fixed
-- Fixed importing large .mrpack files in Modrinth App causing OS freezing or crashing.
+- Fixed importing large .mrpack files in Pounce causing OS freezing or crashing.
 - Fixed the content update modal in the Content tab of instances hiding available updates in some cases.
 - Fixed copying full paths from the Files tab using mixed path separators on Windows.`,
 	},
@@ -1475,9 +1475,9 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.14.1',
 		body: `## Added
-- Pride Fundraiser 2026 banner in the Modrinth App sidebar with donation progress, supporter count, days remaining, and a donation link.
-- Modrinth Pride Fundraiser supporters can now access exclusive Mr. Pack Pride skins in the Modrinth App Skin selector.
-- Mr. Pack is now available as a default skin in the Modrinth App Skin selector.
+- Pride Fundraiser 2026 banner in the Pounce sidebar with donation progress, supporter count, days remaining, and a donation link.
+- Modrinth Pride Fundraiser supporters can now access exclusive Mr. Pack Pride skins in the Pounce Skin selector.
+- Mr. Pack is now available as a default skin in the Pounce Skin selector.
 
 ## Changed
 - Updated tooltips from pure black backgrounds to a style consistent with other popovers.
@@ -1547,12 +1547,12 @@ const VERSIONS: VersionEntry[] = [
 - Changed cape selection so each saved skin controls its own cape instead of using a separate default cape.
 - Moved cape selection into the Edit skin modal, with a \`None\` option for saving skins without capes.
 - Updated skin previews for more consistent framing across the Skin selector, skin editor, and skin cards.
-- Skin and cape changes made outside Modrinth App are now reflected when the Skin selector refreshes or on app launch safely.
+- Skin and cape changes made outside Pounce are now reflected when the Skin selector refreshes or on app launch safely.
 - Images from \`user-images.githubusercontent.com\` are no longer proxied.
 
 ## Fixed
 - Fixed duplicate saved skin cards appearing when the same texture was saved with different arm or cape settings.
-- Fixed skins equipped outside Modrinth App disappearing from the Skin selector after switching to another skin.
+- Fixed skins equipped outside Pounce disappearing from the Skin selector after switching to another skin.
 - Fixed skin selection hanging when a skin texture download stopped responding.
 - Fixed the hide nametag setting not updating the Skin selector preview until the page refreshed.`,
 	},
@@ -1596,7 +1596,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.13.22',
 		body: `## Added
-- Added log spam detection and line compacting logic to prevent Modrinth App from crashing when viewing large log files.
+- Added log spam detection and line compacting logic to prevent Pounce from crashing when viewing large log files.
 
 ## Changed
 - Increased the default memory for instances from 2GB to 4GB (depending on your system memory).
@@ -1829,7 +1829,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-05-08T02:24:09+00:00`,
 		product: 'hosting',
 		body: `## Fixed
-- Fixed failed \`mrpack\` uploads when uploading via the Modrinth App.
+- Fixed failed \`mrpack\` uploads when uploading via the Pounce.
 - Fixed support bubble being broken when the console is in full screen/expand mode.`,
 	},
 	{
@@ -1938,7 +1938,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-04-27T19:59:24+00:00`,
 		product: 'app',
 		version: '0.13.6',
-		body: `*Note: Modrinth App v0.13.5's release has been skipped - it's changes have been bundled into 0.13.6.*
+		body: `*Note: Pounce v0.13.5's release has been skipped - it's changes have been bundled into 0.13.6.*
 ## Changed
 - Renamed the Browse page filter from "Hide installed content/added servers" to "Hide already installed content/added servers".
 - Content installed and servers added from an instance now stay visible on the Browse page until the search query or filters change.
@@ -2042,7 +2042,7 @@ const VERSIONS: VersionEntry[] = [
 
 ## Fixed
 - Fixed slow tab switching in the server panel.
-- Fixed slow loading of the "Manage servers" page in the Modrinth App and slow interactions with it on the website.`,
+- Fixed slow loading of the "Manage servers" page in the Pounce and slow interactions with it on the website.`,
 	},
 	{
 		date: `2026-04-18T19:00:59+00:00`,
@@ -2064,12 +2064,12 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 - Console search highlighting is clearer and more accurate.
 - When memory is shown as bytes, the max RAM is now displayed alongside it.
-- Consolidated spacing between server and instance pages in the Modrinth App.
+- Consolidated spacing between server and instance pages in the Pounce.
 - Moved the "Kill server" action into a dropdown under the "Restart" button.
 
 ## Fixed
-- The support bubble is now available on hosting pages in the Modrinth App.
-- Paper and Purpur build versions can be selected when resetting a server in the Modrinth App.
+- The support bubble is now available on hosting pages in the Pounce.
+- Paper and Purpur build versions can be selected when resetting a server in the Pounce.
 - Server CPU and memory graphs no longer freeze on the last value after a hard crash or out-of-memory kill.`,
 	},
 	{
@@ -2166,7 +2166,7 @@ const VERSIONS: VersionEntry[] = [
 ## Changed
 - When updating your game version in the platform settings, incompatible mods are now disabled instead of removed.
 - Better UI for installed custom modpack files.
-- Redesigned the server panel header — loader, game version, server address, uptime, and linked project are now shown as clean inline stats with the project icon and a link to the project page, matching instances in the Modrinth App.
+- Redesigned the server panel header — loader, game version, server address, uptime, and linked project are now shown as clean inline stats with the project icon and a link to the project page, matching instances in the Pounce.
 - Rebuilt the Files tab with right-click context menus, keyboard shortcuts, drag-and-drop, improved modals for moving items and extracting archives, undo/redo for file moves and renames, and smoother scrolling for large directories, now aligned with the Content tab design.
 - Cleaned up backup progress indicators to be more compact.
 
@@ -2264,7 +2264,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-03-17T12:15:00-08:00`,
 		product: 'hosting',
 		body: `## [Content Management Overhaul](/news/article/content-management-overhaul)
-- We've overhauled the Content tab and improved parity with Modrinth App. Check out our [blog post](/news/article/content-management-overhaul) to learn more.`,
+- We've overhauled the Content tab and improved parity with Pounce. Check out our [blog post](/news/article/content-management-overhaul) to learn more.`,
 	},
 	{
 		date: `2026-03-13T00:15:00-00:00`,
@@ -2503,7 +2503,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.10.27',
 		body: `## Improvements
 - Fixed installing content from Discover refusing to create NeoForge instances.
-- Added circuit-breaker logic to prevent Modrinth App from spamming API requests during downtime.`,
+- Added circuit-breaker logic to prevent Pounce from spamming API requests during downtime.`,
 	},
 	{
 		date: `2026-01-23T12:25:00-08:00`,
@@ -2515,7 +2515,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2026-01-22T11:40:00-08:00`,
 		product: 'web',
 		body: `## Improvements
-- Updated Flathub to be the official recommended way to download Modrinth App on Linux.`,
+- Updated Flathub to be the official recommended way to download Pounce on Linux.`,
 	},
 	{
 		date: `2026-01-21T14:55:00-08:00`,
@@ -2954,7 +2954,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'app',
 		version: '0.10.8',
 		body: `### Improvements
-- Overhauled Modrinth App updater to make it easier to stay up-to-date.
+- Overhauled Pounce updater to make it easier to stay up-to-date.
   - Updates will now be downloaded in the background to make a seamless updating experience.
   - When an update is downloaded, it will prompt you to reload the app.
   - If a metered internet connection is detected, it will ask you before downloading the update.
@@ -2996,15 +2996,15 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-09-07T15:55:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed Modrinth App sign in redirect when using SSO.`,
+- Fixed Pounce sign in redirect when using SSO.`,
 	},
 	{
 		date: `2025-09-03T15:40:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Fixed a number of bugs with the Modrinth App marketing page
-- Added clearer notices about Modrinth App's beta status on marketing page.
-- Added disclaimer about Modrinth App's issues on Linux to marketing page.
+- Fixed a number of bugs with the Pounce marketing page
+- Added clearer notices about Pounce's beta status on marketing page.
+- Added disclaimer about Pounce's issues on Linux to marketing page.
 - Fixed certain icons in settings shrinking size on mobile.
 - In project settings, the description page no longer refers to all projects as mods.
 - Fixed spelling error during sign up.`,
@@ -3139,7 +3139,7 @@ const VERSIONS: VersionEntry[] = [
 		version: '0.10.5',
 		body: `### Improvements
 - On Windows, the app will now install per-user rather than system-wide.
-	- This allows future versions of Modrinth App to update seamlessly if the user is not an administrator.
+	- This allows future versions of Pounce to update seamlessly if the user is not an administrator.
 	- When updating to this version, the app will prompt you for Admin elevation in order to remove the old system-wide installation.
 	- Desktop shortcuts should be migrated automatically to the new installation location.
 - Improvements to the Skins page.
@@ -3165,7 +3165,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed the back/forward buttons appearing with white icons in light mode.
 - Fixed 'Party Alex' skin not using slim character model.
 - Improved resilience of Minecraft launching on Java 8 under certain circumstances.
-- Added system for showing users surveys to provide feedback on their experience with Modrinth App.
+- Added system for showing users surveys to provide feedback on their experience with Pounce.
 
 **This update was originally launched as 0.10.4, but was pulled due to issues with many functions of the app.**`,
 	},
@@ -3320,7 +3320,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'web',
 		body: `### Changed
 - Changed fallback ad placeholder from promoting Modrinth+ to Modrinth Servers.
-- Fixed news section rendering incorrectly in light mode on landing page and Modrinth App page.`,
+- Fixed news section rendering incorrectly in light mode on landing page and Pounce page.`,
 	},
 	{
 		date: `2025-06-30T19:15:00-07:00`,
@@ -3442,7 +3442,7 @@ const VERSIONS: VersionEntry[] = [
 		product: 'web',
 		body: `### Improvements
 - Added a button to switch Modrinth+ billing between monthly and yearly.
-- Updated Modrinth App marketing page screenshots.`,
+- Updated Pounce marketing page screenshots.`,
 	},
 	{
 		date: `2025-05-01T18:10:00-07:00`,
@@ -3485,7 +3485,7 @@ const VERSIONS: VersionEntry[] = [
 		date: `2025-04-28T19:45:00-07:00`,
 		product: 'web',
 		body: `### Improvements
-- Combined Apple Silicon and Intel download links for Modrinth App into one link.
+- Combined Apple Silicon and Intel download links for Pounce into one link.
 - Added an option to copy a permanent link (using IDs instead of changeable slugs) to projects, users, and organizations.
 - Fixed overflow issue with dev-mode Maven coordinates widget, and changed wording.`,
 	},
@@ -3788,7 +3788,7 @@ const VERSIONS: VersionEntry[] = [
 - Fixed issue importing newer Prism instances.
 - Fixed issue where instances get stuck "Installing" forever when the app is closed during an install.
 - Minecraft profile is now updated every time the user's token is refreshed.
-- Improved ability for package managers to update Modrinth App by skipping the updater at runtime with an environment variable.`,
+- Improved ability for package managers to update Pounce by skipping the updater at runtime with an environment variable.`,
 	},
 	{
 		date: `2025-02-02T14:00:00-08:00`,
