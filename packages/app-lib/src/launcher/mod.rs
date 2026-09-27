@@ -956,6 +956,8 @@ pub async fn launch_minecraft(
 
     // Check if instance has a running process, and reject running the command if it does
     let existing_processes = process::get_by_instance_id(&instance.id).await?;
+	// Pounce - Disable useless "already running" check
+	/*
     if let Some(process) = existing_processes.first() {
         return Err(crate::ErrorKind::LauncherError(format!(
             "Instance {} is already running as process {}",
@@ -970,6 +972,7 @@ pub async fn launch_minecraft(
         ))
         .as_error());
     }
+	*/
 
     if let Some(path) = download::missing_runtime_file(
         &state,
@@ -1139,6 +1142,8 @@ pub async fn launch_minecraft(
     let _store_lease = state.content_store.lease().await;
     state.content_store.recover(Some(&instance.id)).await?;
     // state.content_store.validate_instance(instance).await?;
+	// Pounce - Disable useless "already running" check
+	/*
     if crate::state::instance_has_running_process(&instance.id, &state).await? {
         return Err(crate::ErrorKind::LauncherError(format!(
             "Instance {} is already running",
@@ -1146,6 +1151,7 @@ pub async fn launch_minecraft(
         ))
         .as_error());
     }
+	*/
 
     crate::state::instances::commands::set_instance_last_played(
         &instance.id,

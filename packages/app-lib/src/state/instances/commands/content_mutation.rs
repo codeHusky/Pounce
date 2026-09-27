@@ -223,12 +223,15 @@ impl<'a> InstanceContent<'a> {
         request: InstallContent<'_>,
     ) -> crate::Result<PendingContentChange> {
         self.content_scope()?;
+		// Pounce - Allow installing stuff when the modpack is running
+		/*
         require_stopped_for_content(
             &self.instance.id,
             request.project_type,
             self.state,
         )
         .await?;
+		*/
         let relative_path = canonical_content_path(request.requested_path);
         if !crate::state::content_store::is_managed_content_path(relative_path)
         {
@@ -358,13 +361,16 @@ impl<'a> InstanceContent<'a> {
         let project_type =
             super::sync_content_files::project_type_for_file(&file)
                 .ok_or_else(|| input("Unsupported content type"))?;
-        require_stopped_for_content(
-            &self.instance.id,
-            project_type,
-            self.state,
-        )
-        .await?;
         let enabled = desired_enabled.unwrap_or(!file.enabled);
+		// Pounce - Only gate running when disabling mods
+		if(!enabled){
+			require_stopped_for_content(
+				&self.instance.id,
+				project_type,
+				self.state,
+			)
+			.await?;
+		}
         let file_change = match self
             .state
             .content_store
