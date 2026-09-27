@@ -91,6 +91,15 @@
 					{{ formatMessage(commonMessages.installingLabel) }}
 				</Button>
 				<Button
+					v-else-if="loading"
+					type="colored"
+					color="brand"
+					size="xl"
+					native-type="button"
+					disabled
+					>{{ formatMessage(messages.starting) }}</Button
+				>
+				<Button
 					v-else-if="playing"
 					type="colored"
 					color="red"
@@ -150,9 +159,6 @@
 					<PlayIcon />
 					{{ formatMessage(commonMessages.playButton) }}
 				</Button>
-				<Button v-else type="colored" color="brand" size="xl" native-type="button" disabled>{{
-					formatMessage(messages.starting)
-				}}</Button>
 
 				<IconButton
 					v-tooltip="formatMessage(messages.instanceSettings)"
