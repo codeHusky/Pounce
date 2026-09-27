@@ -81,7 +81,7 @@
 					{{ formatMessage(commonMessages.installingLabel) }}
 				</Button>
 				<Button
-					v-else-if="playing"
+					v-else-if="false && playing"
 					type="colored"
 					color="red"
 					size="xl"
@@ -93,6 +93,17 @@
 					{{
 						stopping ? formatMessage(messages.stopping) : formatMessage(commonMessages.stopButton)
 					}}
+				</Button>
+				<Button
+					v-else-if="playing"
+					type="colored"
+					color="orange"
+					size="xl"
+					native-type="button"
+					@click="emit('play')"
+				>
+					<PlayIcon />
+					Launch another
 				</Button>
 				<Button
 					v-else-if="instance.quarantined"

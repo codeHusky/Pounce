@@ -1,7 +1,12 @@
 {
 	"prettier.endOfLine": "lf",
 	"editor.formatOnSave": true,
-	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"files.eol": "\n",
@@ -41,5 +46,11 @@
 	"i18n-ally.keystyle": "flat",
 	"i18n-ally.sourceLanguage": "en-US",
 	"i18n-ally.namespace": false,
-	"i18n-ally.includeSubfolders": true
+	"i18n-ally.includeSubfolders": true,
+	"search.exclude": {
+		"**/node_modules": true
+	},
+	"files.watcherExclude": {
+		"**/node_modules/**": true
+	}
 }

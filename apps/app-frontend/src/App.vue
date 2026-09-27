@@ -362,9 +362,9 @@ useQuery({
 })
 const hasPlus = computed(
 	() =>
-		!!credentials.value?.user &&
+		/*!!credentials.value?.user &&
 		(hasMidasBadge(credentials.value.user) ||
-			hasActivePride26Midas(authenticatedModrinthUser.value?.campaigns?.pride_26)),
+			hasActivePride26Midas(authenticatedModrinthUser.value?.campaigns?.pride_26)),*/ true,
 )
 const showAd = computed(
 	() => sidebarVisible.value && !hasPlus.value && credentials.value !== undefined,
@@ -2296,7 +2296,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			>
 				<ImageIcon />
 			</NavButton>
-			<NavButton
+			<!-- <NavButton
 				v-tooltip.right="formatMessage(messages.modrinthHosting)"
 				to="/hosting/manage"
 				:is-primary="(r) => r.path === '/hosting/manage' || r.path === '/hosting/manage/'"
@@ -2307,7 +2307,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 				"
 			>
 				<ServerStackIcon />
-			</NavButton>
+			</NavButton> -->
 			<suspense>
 				<QuickInstanceSwitcher>
 					<NavButton
@@ -2325,7 +2325,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			>
 				<SettingsIcon />
 			</NavButton>
-			<IconButton
+			<!-- <IconButton
 				v-if="credentials === undefined"
 				v-tooltip.right="profileButtonTooltip"
 				type="quiet"
@@ -2388,7 +2388,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			</TeleportOverflowMenu>
 			<NavButton v-else v-tooltip.right="profileButtonTooltip" :to="() => requestSignIn()">
 				<LogInIcon class="text-brand" />
-			</NavButton>
+			</NavButton>-->
 		</div>
 		<div data-tauri-drag-region class="app-grid-statusbar bg-bg-raised h-[--top-bar-height] flex">
 			<div data-tauri-drag-region class="flex min-w-0 flex-1 items-center overflow-hidden p-2">
@@ -2423,7 +2423,7 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 			</div>
 			<section data-tauri-drag-region class="flex shrink-0 ml-auto items-center">
 				<IconButton
-					v-if="!forceSidebar && appSettings.toggleSidebar"
+					v-if="!forceSidebar || (!forceSidebar && appSettings.toggleSidebar)"
 					:type="sidebarToggled ? 'base' : 'quiet'"
 					:label="formatMessage(messages.nextImage)"
 					class="mr-3 transition-transform"
@@ -2512,11 +2512,11 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
 				:class="{ 'pb-12': !hasPlus }"
 				data-overlayscrollbars-initialize
 			>
-				<OnboardingChecklist
+				<!-- <OnboardingChecklist
 					@create-instance="installationModal?.show()"
 					@login-minecraft="accounts?.login()"
 					@login-modrinth="signIn"
-				/>
+				/> -->
 				<div id="sidebar-teleport-target" class="sidebar-teleport-content"></div>
 				<div class="sidebar-default-content" :class="{ 'sidebar-enabled': sidebarVisible }">
 					<div

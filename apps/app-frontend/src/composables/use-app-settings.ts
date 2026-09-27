@@ -50,7 +50,7 @@ const appSettings = reactive({
 	syncBehaviorAcrossDevices,
 	syncFeaturesAcrossDevices,
 	hideNametagSkinsPage: false,
-	toggleSidebar: false,
+	toggleSidebar: true,
 	showFilesTabInInstances: true,
 	showWorldsTabInInstances: true,
 	showScreenshotsTabInInstances: false,
