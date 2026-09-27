@@ -1,4 +1,4 @@
-name: Modrinth App build
+name: Pounce build
 on:
   push:
     branches:
@@ -111,8 +111,8 @@ jobs:
           GIT_HASH=$(git rev-parse --short HEAD)
           cat > apps/app/tauri-dev.conf.json <<EOF
           {
-            "productName": "Modrinth App (dev-${GIT_HASH})",
-            "mainBinaryName": "Modrinth App (dev-${GIT_HASH})",
+            "productName": "Pounce (dev-${GIT_HASH})",
+            "mainBinaryName": "Pounce (dev-${GIT_HASH})",
             "identifier": "ModrinthApp-dev-${GIT_HASH}",
             "bundle": {
               "fileAssociations": []
@@ -188,13 +188,13 @@ jobs:
         with:
           name: App bundle (${{ matrix.artifact-target-name }})
           path: |
-            target/release/bundle/appimage/Modrinth App_*.AppImage*
-            target/release/bundle/deb/Modrinth App_*.deb*
-            target/release/bundle/rpm/Modrinth App-*.rpm*
-            target/release/bundle/appimage/Modrinth App (dev-*)_*.AppImage*
-            target/release/bundle/deb/Modrinth App (dev-*)_*.deb*
-            target/release/bundle/rpm/Modrinth App (dev-*)-*.rpm*
-            target/universal-apple-darwin/release/bundle/dmg/Modrinth App (dev-*)*.dmg
-            target/universal-apple-darwin/release/bundle/dmg/Modrinth App_*.dmg*
-            target/release/bundle/nsis/Modrinth App_*-setup.exe*
-            target/release/bundle/nsis/Modrinth App (dev-*)_*-setup.exe*
+            target/release/bundle/appimage/Pounce_*.AppImage*
+            target/release/bundle/deb/Pounce_*.deb*
+            target/release/bundle/rpm/Pounce-*.rpm*
+            target/release/bundle/appimage/Pounce (dev-*)_*.AppImage*
+            target/release/bundle/deb/Pounce (dev-*)_*.deb*
+            target/release/bundle/rpm/Pounce (dev-*)-*.rpm*
+            target/universal-apple-darwin/release/bundle/dmg/Pounce (dev-*)*.dmg
+            target/universal-apple-darwin/release/bundle/dmg/Pounce_*.dmg*
+            target/release/bundle/nsis/Pounce_*-setup.exe*
+            target/release/bundle/nsis/Pounce (dev-*)_*-setup.exe*
