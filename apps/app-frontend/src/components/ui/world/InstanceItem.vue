@@ -296,7 +296,7 @@ function openContextMenu(event: MouseEvent) {
 						"
 						:disabled="playDisabled"
 						type="colored"
-						color="green"
+						color="brand"
 						@click="play"
 					>
 						<SpinnerIcon v-if="loading || installing" class="animate-spin" />
