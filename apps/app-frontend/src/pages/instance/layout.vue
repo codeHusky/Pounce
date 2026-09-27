@@ -500,7 +500,7 @@ const isFixedRender = computed(() => renderMode.value === 'fixed')
 const currentUserCanUseSharedInstances = sharedInstanceState.currentUserCanUseSharedInstances
 const showShareTab = computed(() => {
 	const linkType = instance.value?.link?.type
-
+	return false
 	return (
 		currentUserCanUseSharedInstances.value &&
 		!instance.value?.quarantined &&
