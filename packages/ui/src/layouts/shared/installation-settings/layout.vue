@@ -582,7 +582,7 @@ const messages = defineMessages({
 
 		<template v-else>
 			<!-- Installation Info (linked state) -->
-			<div v-if="ctx.isLinked.value" class="flex flex-col gap-2.5">
+			<!-- <div v-if="ctx.isLinked.value" class="flex flex-col gap-2.5">
 				<span class="text-lg font-semibold text-contrast">
 					{{ formatMessage(commonMessages.installationInfoTitle) }}
 				</span>
@@ -600,10 +600,199 @@ const messages = defineMessages({
 						></span>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- LINKED -->
 			<template v-if="ctx.isLinked.value">
+				<!-- Edit form -->
+				<div v-if="form.isEditing.value" class="flex flex-col gap-2.5">
+					<span class="text-lg font-semibold text-contrast">
+						{{ formatMessage(messages.editInstallationTitle) }}
+					</span>
+					<div class="flex flex-col gap-3 rounded-[20px] border border-solid border-surface-5 p-4">
+						<!-- <div class="flex flex-col gap-2.5">
+							<span class="font-semibold text-contrast">
+								{{ formatMessage(commonMessages.platformLabel) }}
+							</span>
+							<Chips
+								v-model="form.selectedPlatform.value"
+								:items="availablePlatforms"
+								:format-label="formatLoaderLabel"
+								:capitalize="false"
+								:disabled-items="platformDisabledItems"
+								:disabled-tooltip="platformDisabledTooltip"
+								:aria-label="formatMessage(messages.selectPlatformAriaLabel)"
+							/>
+						</div> -->
+
+						<!-- <div class="flex flex-col gap-2.5">
+							<span class="font-semibold text-contrast">
+								{{ formatMessage(commonMessages.gameVersionLabel) }}
+							</span>
+							<Combobox
+								v-model="form.selectedGameVersion.value"
+								v-tooltip="ctx.isBusy.value ? ctx.busyMessage?.value : undefined"
+								:options="form.gameVersionOptions.value"
+								searchable
+								sync-with-selection
+								:placeholder="formatMessage(commonMessages.selectVersionPlaceholder)"
+								:search-placeholder="formatMessage(messages.searchGameVersionPlaceholder)"
+								:display-value="
+									form.selectedGameVersion.value ||
+									formatMessage(commonMessages.selectVersionPlaceholder)
+								"
+								:aria-label="formatMessage(messages.selectGameVersionAriaLabel)"
+								:disabled="true"
+								@option-hover="ctx.onGameVersionHover?.($event)"
+							>
+								<template v-if="form.hasSnapshots.value" #dropdown-footer>
+									<button
+										v-tooltip="ctx.isBusy.value ? ctx.busyMessage?.value : undefined"
+										class="flex w-full cursor-pointer items-center justify-center gap-1.5 border-0 border-t border-solid border-surface-5 bg-transparent py-3 text-center text-sm font-semibold text-secondary transition-colors hover:text-contrast"
+										:disabled="ctx.isBusy.value"
+										@mousedown.prevent
+										@click="form.showSnapshots.value = !form.showSnapshots.value"
+									>
+										<EyeOffIcon v-if="form.showSnapshots.value" class="size-4" />
+										<EyeIcon v-else class="size-4" />
+										{{
+											form.showSnapshots.value
+												? formatMessage(commonMessages.hideSnapshotsButton)
+												: formatMessage(commonMessages.showAllVersionsButton)
+										}}
+									</button>
+								</template>
+							</Combobox>
+						</div> -->
+
+						<div
+							v-if="form.selectedPlatform.value !== 'vanilla' && !ctx.hideLoaderVersion"
+							class="flex flex-col gap-2.5"
+						>
+							<span class="font-semibold text-contrast">
+								{{
+									formatMessage(messages.loaderVersionLabel, {
+										loader: form.formattedLoaderName.value,
+									})
+								}}
+							</span>
+							<Combobox
+								v-model="form.selectedLoaderVersion.value"
+								v-tooltip="ctx.isBusy.value ? ctx.busyMessage?.value : undefined"
+								searchable
+								sync-with-selection
+								:placeholder="
+									form.loaderVersionDisplayValue.value ||
+									formatMessage(commonMessages.selectVersionPlaceholder)
+								"
+								:search-placeholder="formatMessage(commonMessages.searchVersionPlaceholder)"
+								:options="form.loaderVersionOptions.value"
+								:display-value="
+									form.loaderVersionDisplayValue.value ||
+									formatMessage(commonMessages.selectVersionPlaceholder)
+								"
+								:aria-label="
+									formatMessage(messages.selectLoaderVersionAriaLabel, {
+										loader: form.formattedLoaderName.value,
+									})
+								"
+								:disabled="ctx.isBusy.value"
+							>
+								<template
+									v-if="form.selectedPlatform.value === 'paper'"
+									#option="{ item, isSelected }"
+								>
+									<div class="flex w-full items-center justify-between gap-2">
+										<div class="flex flex-wrap items-center gap-2">
+											<span
+												class="font-semibold leading-tight"
+												:class="isSelected ? 'text-contrast' : 'text-primary'"
+											>
+												{{ item.label }}
+											</span>
+											<PaperChannelBadge :channel="paperLoaderChannelTag(item.value)" />
+										</div>
+									</div>
+								</template>
+								<template
+									v-if="form.selectedPlatform.value === 'paper'"
+									#search-selection-affix="{ option }"
+								>
+									<PaperChannelBadge
+										affix
+										:channel="option ? paperLoaderChannelTag(option.value) : null"
+									/>
+								</template>
+							</Combobox>
+						</div>
+
+						<div class="flex flex-wrap gap-2">
+							<Button
+								v-tooltip="ctx.isBusy.value ? ctx.busyMessage?.value : undefined"
+								type="colored"
+								color="brand"
+								:disabled="
+									!form.isValid.value ||
+									!form.hasChanges.value ||
+									form.isSaving.value ||
+									ctx.isBusy.value
+								"
+								@click="handleSave"
+							>
+								<SpinnerIcon v-if="form.isSaving.value" class="animate-spin" />
+								<SaveIcon v-else />
+								{{
+									form.isVerifying.value
+										? formatMessage(messages.verifyingLabel)
+										: form.isSaving.value
+											? formatMessage(messages.savingLabel)
+											: formatMessage(commonMessages.saveButton)
+								}}
+							</Button>
+							<Button type="outlined" @click="handleCancelEditing">
+								<XIcon />
+								{{ formatMessage(commonMessages.cancelButton) }}
+							</Button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Non-editing: installation info + warning + edit button -->
+				<div v-if="!form.isEditing.value" class="flex flex-col gap-2.5">
+					<span class="text-lg font-semibold text-contrast">
+						{{ formatMessage(commonMessages.installationInfoTitle) }}
+					</span>
+					<div class="flex flex-col gap-2.5 rounded-[20px] bg-surface-2 p-4">
+						<div
+							v-for="row in ctx.installationInfo.value"
+							:key="row.label"
+							class="flex items-center justify-between"
+						>
+							<span class="text-primary">{{ row.label }}</span>
+							<span class="font-semibold text-contrast">{{ row.value }}</span>
+						</div>
+					</div>
+					<div class="flex flex-wrap gap-2">
+						<Button
+							v-tooltip="ctx.isBusy.value ? ctx.busyMessage?.value : undefined"
+							type="colored"
+							color="orange"
+							:disabled="ctx.isBusy.value"
+							@click="handleStartEditing"
+						>
+							<PencilIcon class="size-5" />
+							{{ formatMessage(commonMessages.editButton) }}
+						</Button>
+						<slot name="unlinked-extra-buttons" />
+
+						<div class="flex items-start gap-2" style="flex: 1">
+							<CircleAlertIcon class="mt-0.5 size-5 shrink-0 text-orange" />
+							<span class="text-primary">
+								It's not advised to edit these values unless you know what you're doing.
+							</span>
+						</div>
+					</div>
+				</div>
 				<!-- Installed Modpack -->
 				<div v-if="ctx.modpack.value" class="flex flex-col gap-2.5">
 					<span class="text-lg font-semibold text-contrast">
