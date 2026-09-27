@@ -362,7 +362,7 @@ impl<'a> InstanceContent<'a> {
             super::sync_content_files::project_type_for_file(&file)
                 .ok_or_else(|| input("Unsupported content type"))?;
         let enabled = desired_enabled.unwrap_or(!file.enabled);
-		// Pounce - Only gate running when disabling mods
+		// Pounce - Only gate running when disabling mods.
 		if(!enabled){
 			require_stopped_for_content(
 				&self.instance.id,
