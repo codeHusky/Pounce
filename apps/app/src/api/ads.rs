@@ -25,14 +25,15 @@ const APP_TITLE_BAR_HEIGHT: f32 = 48.0;
 pub(super) const OCCLUDED_AREA_THRESHOLD: f64 = 0.5;
 
 fn should_show_ads_webview(state: &AdsState) -> bool {
-    state.shown && (state.visibility_holds == 0 || state.consent_overlay_shown)
+    false
+	//state.shown && (state.visibility_holds == 0 || state.consent_overlay_shown)
 }
 
 #[cfg(not(target_os = "linux"))]
 const ADS_USER_AGENT: &str = concat!(
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ",
     "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 ",
-    "ModrinthApp/",
+    "Pounce/",
     env!("CARGO_PKG_VERSION"),
     " (Modrinth App)",
 );
