@@ -45,6 +45,7 @@ jobs:
     env:
       VITE_STRIPE_PUBLISHABLE_KEY: pk_live_51JbFxJJygY5LJFfKLVVldb10HlLt24p421OWRsTOWc5sXYFOnFUXWieSc6HD3PHo25ktx8db1WcHr36XGFvZFVUz00V9ixrCs5
       RUSTC_WRAPPER: 'sccache'
+      SCCACHE_GHA_ENABLED: 'true'
     strategy:
       fail-fast: false
       matrix:
@@ -66,7 +67,7 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: namespacelabs/nscloud-checkout-action@66f2dc6f6c42a8ac6c4e53473c4840006822831e # v9.0.1
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -75,6 +76,7 @@ jobs:
         with:
           rustflags: ''
           target: ${{ contains(matrix.artifact-target-name, 'darwin') && 'x86_64-apple-darwin' || '' }}
+          cache: false
 
       - name: Setup mold
         if: contains(matrix.artifact-target-name, 'linux')
@@ -82,6 +84,11 @@ jobs:
 
       - name: Setup sccache
         uses: mozilla-actions/sccache-action@9e7fa8a12102821edf02ca5dbea1acd0f89a2696 # v0.0.10
+
+      - name: Cache Cargo registry
+        uses: Swatinem/rust-cache@v2
+        with:
+          cache-targets: false
 
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
@@ -91,15 +98,17 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
-      - name: Set up caches
-        uses: namespacelabs/nscloud-cache-action@c5f8dab7560444c4bf8dbc64f1b203431873c547 # v1.6.1
-        with:
-          cache: |
-            rust
-            pnpm
+      - name: Get pnpm store directory
+        shell: bash
+        run: echo "PNPM_STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
 
-      - name: Configure sccache
-        run: nsc cache sccache setup --cache_name default >> "$GITHUB_ENV"
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.PNPM_STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Generate tauri-dev.conf.json
         shell: bash
