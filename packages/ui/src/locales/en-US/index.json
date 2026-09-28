@@ -780,7 +780,7 @@
 		"defaultMessage": "Update all"
 	},
 	"content.page-layout.upload-files": {
-		"defaultMessage": "Upload files"
+		"defaultMessage": "Add files"
 	},
 	"content.selection-bar.all-already-disabled": {
 		"defaultMessage": "All selected content is already disabled"
