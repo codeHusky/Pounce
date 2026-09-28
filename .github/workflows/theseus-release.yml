@@ -25,8 +25,9 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: namespacelabs/nscloud-checkout-action@66f2dc6f6c42a8ac6c4e53473c4840006822831e # v9.0.1
-
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
       - name: Verify ref is a tag
         env:
           GH_TOKEN: ${{ github.token }}

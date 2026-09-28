@@ -492,6 +492,7 @@ const basePath = computed(() => `/instance/${encodeURIComponent(instanceId.value
  *   `useStickyObserver`) work correctly.
  * - `'fixed'`: the header + tabs are pinned and only the tab body scrolls in its own container.
  *   Used by tabs whose content (e.g. the log console) needs a bounded height to resolve `h-full`.
+ *
  */
 const renderMode = computed<'scroll' | 'fixed'>(() =>
 	route.meta.renderMode === 'fixed' ? 'fixed' : 'scroll',
