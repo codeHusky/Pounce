@@ -340,6 +340,7 @@ const messages = defineMessages({
 				</div>
 			</div>
 		</template>
+		<!--
 		<template v-else-if="sortedFriends.length === 0">
 			<div class="text-sm">
 				<div v-if="!userCredentials">
@@ -407,5 +408,5 @@ const messages = defineMessages({
 				{{ formatMessage(messages.noFriendsMatch, { query: search }) }}
 			</p>
 		</template>
-	</div>
+		--></div>
 </template>

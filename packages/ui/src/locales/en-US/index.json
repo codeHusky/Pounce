@@ -396,7 +396,7 @@
 		"defaultMessage": "Synced across instances"
 	},
 	"content.card.uploaded": {
-		"defaultMessage": "Uploaded"
+		"defaultMessage": "Local File"
 	},
 	"content.confirm-bulk-update.admonition-body": {
 		"defaultMessage": "Are you sure you want to update {count, plural, one {# project} other {# projects}} to their latest compatible version? It's recommended to update content one-by-one."
